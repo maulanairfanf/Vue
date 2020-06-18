@@ -1,20 +1,22 @@
 <template>
   <div id="app">
     <!-- <skills/> -->
-    <VueLidate/>
+    <!-- <VueLidate/> -->
+    <FormValidation/>
   </div>
 </template>
 
 <script>
-// import FormValidation from './components/FormValidation.vue'
+import FormValidation from './components/FormValidation.vue'
 // import Skills from './components/Skills.vue'
-import VueLidate from './components/VueLidate.vue'
+// import VueLidate from './components/VueLidate.vue'
 
 export default {
   name: 'App',
   components: {
     // Skills,
-    VueLidate
+    // VueLidate,
+    FormValidation
   }
 }
 </script>
