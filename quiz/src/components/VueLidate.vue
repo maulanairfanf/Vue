@@ -5,6 +5,7 @@
       <div>
         <label for="userMail">Mail</label>
         <input
+          class="form-control"
           id="userMail"
           v-model.trim="mail"
           @input="$v.mail.$touch"
@@ -13,7 +14,7 @@
       </div>
       <div class="error" v-if="$v.mail.$dirty && !$v.mail.required">Mail is required</div>
       <div class="error" v-if="$v.mail.$dirty && !$v.mail.email">Mail is not valid</div>
-      <button class="btn-primary" type="submit" :disabled="$v.$invalid">Submit</button>
+      <button class="btn btn-primary" type="submit" :disabled="$v.$invalid">Submit</button>
     </form>
   </div>
 </template>
@@ -35,7 +36,6 @@ export default {
   methods: {
     onSubmit() {
       if (this.$v.$invalid) return;
-      // Do something
     }
   }
 };
