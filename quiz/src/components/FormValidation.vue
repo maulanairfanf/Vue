@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       name: "",
-      age: 0
+      age: ''
     };
   },
   validations: {
