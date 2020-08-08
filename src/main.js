@@ -12,7 +12,7 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes: Routes,
-  // mode:'history'
+
 });
 
 //costume directives
@@ -22,15 +22,6 @@ Vue.directive('rainbow', {
   }
 });
 
-// Vue.directive('theme', {
-//   bind(el, binding, vnode) {
-//     if (binding.value == 'wide') {
-//       el.style.maxWidth = "1200px";
-//     } else if (binding.value == 'narrow') {
-//       el.style.maxWidth = "560px";
-//     }
-//   }
-// });
 
 new Vue({
   el: '#app',

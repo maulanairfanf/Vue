@@ -2,7 +2,6 @@
   <div v-theme="narrow" id="show-blogs">
     <h1>All Blog Article</h1>
     <input type="text" v-model="search" placeholder="search blogs" />
-    <button type="button" class="btn btn-primary">Primary</button>
     <div v-for="blog in filteredBlogs" v-bind:key="blog" class="single-blog">
       <router-link v-bind:to="'/blog/' + blog.id ">
         <h2>{{blog.title | to-uppercase}}</h2>
